@@ -1,0 +1,660 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1374AD1B-7FCE-4123-ABA9-F47491978E52}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MEDICALSHOP1</RootNamespace>
+    <AssemblyName>AIM TRADE</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>E:\AKSHAYA MED\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>F48388BA4330CF48EDC5E338D7169352AEA3D6C7</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>MEDICALSHOP1_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\pranav s pradeep\Documents\EGDownloads\CrystalDecisions.CrystalReports.Engine\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <Private>True</Private>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="SecureApp">
+      <HintPath>C:\Users\pranav s pradeep\Downloads\Make Your Application with Trial Version\MainProject\MainProject\bin\Debug\SecureApp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADMINUSERLOGIN\AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINUSERLOGIN\AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRYSTALREPORTS\Bill.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Bill.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BILLPREVIEW\BillPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BILLPREVIEW\BillPreview.Designer.cs">
+      <DependentUpon>BillPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BILLPREVIEW\billprint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BILLPREVIEW\billprint.Designer.cs">
+      <DependentUpon>billprint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRYSTALREPORTS\SalesCrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalesCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DATASET\billprintdataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>billprintdataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DATASET\Outofstock.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Outofstock.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DATASET\Purchasereturndataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Purchasereturndataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DATASET\SalesReportDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalesReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DATASET\SalesReturnDataset.cs">
+      <DependentUpon>SalesReturnDataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DATASET\SalesReturnDataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalesReturnDataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DGVPrinter.cs" />
+    <Compile Include="MASTERS\BranchMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MASTERS\BranchMaster.Designer.cs">
+      <DependentUpon>BranchMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADITIONALPAGES\ChequesClearing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADITIONALPAGES\ChequesClearing.Designer.cs">
+      <DependentUpon>ChequesClearing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADITIONALPAGES\GstPurchaseToACC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADITIONALPAGES\GstPurchaseToACC.Designer.cs">
+      <DependentUpon>GstPurchaseToACC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\ItemwiseReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTS\ItemwiseReport.Designer.cs">
+      <DependentUpon>ItemwiseReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\OUTofSTOCKreport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTS\OUTofSTOCKreport.Designer.cs">
+      <DependentUpon>OUTofSTOCKreport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRYSTALREPORTS\OutofStockreporting.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OutofStockreporting.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="CRYSTALREPORTS\PurchaseReturnReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PurchaseReturnReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="REPORTS\PurchaseReturnReportview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTS\PurchaseReturnReportview.Designer.cs">
+      <DependentUpon>PurchaseReturnReportview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRYSTALREPORTS\SalesReturnCrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalesReturnCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="REPORTS\SaleReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTS\SaleReport.Designer.cs">
+      <DependentUpon>SaleReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\SalesReturnReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTS\SalesReturnReport.Designer.cs">
+      <DependentUpon>SalesReturnReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINUSERLOGIN\UserLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINUSERLOGIN\UserLogin.Designer.cs">
+      <DependentUpon>UserLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAIN MDI\Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAIN MDI\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MASTERS\ManufacturingMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MASTERS\ManufacturingMaster.Designer.cs">
+      <DependentUpon>ManufacturingMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADITIONALPAGES\OpeningStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADITIONALPAGES\OpeningStock.Designer.cs">
+      <DependentUpon>OpeningStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MASTERS\ProductMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MASTERS\ProductMaster.Designer.cs">
+      <DependentUpon>ProductMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trail\TrialTracker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trail\TrialTracker.Designer.cs">
+      <DependentUpon>TrialTracker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TRANSACTIONS\Purchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TRANSACTIONS\Purchase.Designer.cs">
+      <DependentUpon>Purchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TRANSACTIONS\PurchaseReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TRANSACTIONS\PurchaseReturn.Designer.cs">
+      <DependentUpon>PurchaseReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TRANSACTIONS\Sales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TRANSACTIONS\Sales.Designer.cs">
+      <DependentUpon>Sales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TRANSACTIONS\SalesReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TRANSACTIONS\SalesReturn.Designer.cs">
+      <DependentUpon>SalesReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINUSERLOGIN\UserSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINUSERLOGIN\UserSelection.Designer.cs">
+      <DependentUpon>UserSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADITIONALPAGES\Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADITIONALPAGES\Stock.Designer.cs">
+      <DependentUpon>Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MASTERS\SubCategoryMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MASTERS\SubCategoryMaster.Designer.cs">
+      <DependentUpon>SubCategoryMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MASTERS\SupplierMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MASTERS\SupplierMaster.Designer.cs">
+      <DependentUpon>SupplierMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINUSERLOGIN\UserCreationMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINUSERLOGIN\UserCreationMaster.Designer.cs">
+      <DependentUpon>UserCreationMaster.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ADMINUSERLOGIN\AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTALREPORTS\Bill.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Bill.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BILLPREVIEW\BillPreview.resx">
+      <DependentUpon>BillPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BILLPREVIEW\billprint.resx">
+      <DependentUpon>billprint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTALREPORTS\SalesCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SalesCrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MASTERS\BranchMaster.resx">
+      <DependentUpon>BranchMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADITIONALPAGES\ChequesClearing.resx">
+      <DependentUpon>ChequesClearing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADITIONALPAGES\GstPurchaseToACC.resx">
+      <DependentUpon>GstPurchaseToACC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\ItemwiseReport.resx">
+      <DependentUpon>ItemwiseReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\OUTofSTOCKreport.resx">
+      <DependentUpon>OUTofSTOCKreport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTALREPORTS\OutofStockreporting.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>OutofStockreporting.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTALREPORTS\PurchaseReturnReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PurchaseReturnReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\PurchaseReturnReportview.resx">
+      <DependentUpon>PurchaseReturnReportview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTALREPORTS\SalesReturnCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SalesReturnCrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\SaleReport.resx">
+      <DependentUpon>SaleReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\SalesReturnReport.resx">
+      <DependentUpon>SalesReturnReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMINUSERLOGIN\UserLogin.resx">
+      <DependentUpon>UserLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAIN MDI\Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MASTERS\ManufacturingMaster.resx">
+      <DependentUpon>ManufacturingMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADITIONALPAGES\OpeningStock.resx">
+      <DependentUpon>OpeningStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MASTERS\ProductMaster.resx">
+      <DependentUpon>ProductMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trail\TrialTracker.resx">
+      <DependentUpon>TrialTracker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TRANSACTIONS\Purchase.resx">
+      <DependentUpon>Purchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TRANSACTIONS\PurchaseReturn.resx">
+      <DependentUpon>PurchaseReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TRANSACTIONS\Sales.resx">
+      <DependentUpon>Sales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TRANSACTIONS\SalesReturn.resx">
+      <DependentUpon>SalesReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMINUSERLOGIN\UserSelection.resx">
+      <DependentUpon>UserSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADITIONALPAGES\Stock.resx">
+      <DependentUpon>Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MASTERS\SubCategoryMaster.resx">
+      <DependentUpon>SubCategoryMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MASTERS\SupplierMaster.resx">
+      <DependentUpon>SupplierMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMINUSERLOGIN\UserCreationMaster.resx">
+      <DependentUpon>UserCreationMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DATASET\billprintdataset.xsc">
+      <DependentUpon>billprintdataset.xsd</DependentUpon>
+    </None>
+    <None Include="DATASET\billprintdataset.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>billprintdataset.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DATASET\billprintdataset.xss">
+      <DependentUpon>billprintdataset.xsd</DependentUpon>
+    </None>
+    <None Include="DATASET\Outofstock.xsc">
+      <DependentUpon>Outofstock.xsd</DependentUpon>
+    </None>
+    <None Include="DATASET\Outofstock.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Outofstock.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DATASET\Outofstock.xss">
+      <DependentUpon>Outofstock.xsd</DependentUpon>
+    </None>
+    <None Include="DATASET\Purchasereturndataset.xsc">
+      <DependentUpon>Purchasereturndataset.xsd</DependentUpon>
+    </None>
+    <None Include="DATASET\Purchasereturndataset.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Purchasereturndataset.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DATASET\Purchasereturndataset.xss">
+      <DependentUpon>Purchasereturndataset.xsd</DependentUpon>
+    </None>
+    <None Include="DATASET\SalesReportDataSet.xsc">
+      <DependentUpon>SalesReportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DATASET\SalesReportDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SalesReportDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DATASET\SalesReportDataSet.xss">
+      <DependentUpon>SalesReportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DATASET\SalesReturnDataset.xsc">
+      <DependentUpon>SalesReturnDataset.xsd</DependentUpon>
+    </None>
+    <None Include="DATASET\SalesReturnDataset.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SalesReturnDataset.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DATASET\SalesReturnDataset.xss">
+      <DependentUpon>SalesReturnDataset.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User_botton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usernameLogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\passwordlogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Submit_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginbanner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stripbackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salesiconnoback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchasenoback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\producticonnoback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manufactureiconnoback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\branchicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suppliericonnoback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reportnoback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salesreturniconnoback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchasereturniconnoback.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Akshaya.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AkshayaInnerpages.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_edit-clear_118917.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Help_Circle_Blue_34225.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_BT_database_import_905550.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ICON\medical_case.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
